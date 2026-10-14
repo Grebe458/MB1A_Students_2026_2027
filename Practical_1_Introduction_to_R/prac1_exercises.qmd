@@ -1,0 +1,49 @@
+---
+title: "prac1_exercises"
+author: "Zhenxuan Hu"
+---
+Round number to nearest whole number. 
+```{r}
+round(3.14159)
+```
+```{r}
+round(1.14514, digits = 2)
+```
+```{r}
+print(seq(1, 10, 2))
+print(seq(5, 15, 5))
+print(seq(by = 2, from = 1, to = 10))
+print(seq(by = 5, to = 15, from = 5))
+```
+```{r}
+print(rep(2, 5))
+print(rep(x = 2, times = 5))
+```
+```{r}
+print(rep(32, 5))
+print(rep(x = 2, times = 7))
+```
+```{r}
+my_variable <- 12
+my_variable <- 10
+print(my_variable)
+```
+```{r}
+x <- "jntm"
+y <- 325
+z <- TRUE
+print(class(x))
+print(class(y))
+print(class(z))
+```
+```{r}
+cell_ID_1 <- "CX1"
+cell_ID_2 <- "CX2"
+treated_1 <- TRUE
+treated_2 <- FALSE
+num_cells_before_1 <- 5415
+num_cells_before_2 <- 8123
+num_cells_after_1 <- 1432
+num_cells_after_2 <- 7543
+```
+
