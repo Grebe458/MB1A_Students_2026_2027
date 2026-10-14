@@ -1,0 +1,28 @@
+---
+title: "ukhsa_data_analysis"
+author: "Zhenxuan Hu"
+---
+```{r}
+library(tidyverse)
+library(gt)
+```
+Import Rhinovirus data csv file 
+```{r}
+rhinovirus <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
+
+gt(head(rhinovirus))
+```
+```{r}
+rhinovirus <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
+ggplot(rhinovirus)
+
+ggplot(rhinovirus, aes(
+  x = date,
+  y = metric_value
+)) +
+  geom_line(colour = "red") +
+  xlab("Date") +
+  ylab("Metric Value") +
+  ggtitle("Metric Value by Date")
+```
+
